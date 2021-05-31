@@ -7,7 +7,7 @@
         <div class="col">
             <div class="card shadow mb-4">
                 <div class="card-header">
-                    <h6 class="m-0 font-weight-bold text-primary">Guest</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Home</h6>
                 </div>
                 <div class="card-body">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil atque doloremque perferendis? Libero porro ducimus, eos dolores aspernatur et, omnis esse ab illum quidem sunt.</p>

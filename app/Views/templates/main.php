@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ARSIP PTIK</title>
+    <title>ARSIP PTIK - <?= $title; ?></title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url(); ?>/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

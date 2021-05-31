@@ -6,6 +6,10 @@ class AdminController extends BaseController
 {
     public function index()
     {
-        return view('admin/index');
+        $data = [
+            'title' => 'Dashboard',
+            'active' => 'dashboard'
+        ];
+        return view('admin/index', $data);
     }
 }

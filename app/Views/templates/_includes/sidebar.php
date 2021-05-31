@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-book"></i>
         </div>
@@ -14,8 +14,8 @@
         </div>
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item">
-            <a class="nav-link" href="">
+        <li class="nav-item <?= $active == 'dashboard' ? 'active' : ''; ?>">
+            <a class="nav-link" href="<?= base_url('admin'); ?>">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
@@ -55,8 +55,8 @@
                 <i class="fas fa-fw fa-dollar-sign"></i>
                 <span>Kelola Denda</span></a>
         </li>
-    <?php endif; ?>
 
+    <?php endif; ?>
     <!-- Divider -->
     <hr class="sidebar-divider">
 
