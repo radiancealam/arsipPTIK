@@ -7,69 +7,72 @@
         </div>
         <div class="sidebar-brand-text mx-3">Arsip PTIK</div>
     </a>
+    <?php if (in_groups('admin')) : ?>
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Main Dashboard
+        </div>
 
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Main Dashboard
-    </div>
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Dashboard</span></a>
+        </li>
 
-    <!-- Nav Item - Dashboard -->
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
-    </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Manajemen
+        </div>
+
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <i class="fas fa-fw fa-users"></i>
+                <span>Kelola User</span></a>
+        </li>
+
+        <!-- Nav Item - Tables -->
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>Kelola Dokumen</span></a>
+        </li>
+
+        <!-- Nav Item - Tables -->
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <i class="fas fa-fw fa-book-reader"></i>
+                <span>Kelola Pinjaman</span></a>
+        </li>
+
+        <!-- Nav Item - Tables -->
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <i class="fas fa-fw fa-dollar-sign"></i>
+                <span>Kelola Denda</span></a>
+        </li>
+    <?php endif; ?>
 
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Manajemen
-    </div>
+    <?php if (in_groups('admin') || in_groups('member')) : ?>
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Profil
+        </div>
 
-    <!-- Nav Item - Charts -->
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="fas fa-fw fa-users"></i>
-            <span>Kelola User</span></a>
-    </li>
-
-    <!-- Nav Item - Tables -->
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Kelola Dokumen</span></a>
-    </li>
-
-    <!-- Nav Item - Tables -->
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="fas fa-fw fa-book-reader"></i>
-            <span>Kelola Pinjaman</span></a>
-    </li>
-
-    <!-- Nav Item - Tables -->
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="fas fa-fw fa-dollar-sign"></i>
-            <span>Kelola Denda</span></a>
-    </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Profil
-    </div>
-
-    <!-- Nav Item - Charts -->
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="fas fa-fw fa-user"></i>
-            <span>Profil Saya</span></a>
-    </li>
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <i class="fas fa-fw fa-user"></i>
+                <span>Profil Saya</span></a>
+        </li>
+    <?php endif; ?>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
